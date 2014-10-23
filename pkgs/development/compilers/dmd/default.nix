@@ -1,11 +1,11 @@
 { stdenv, fetchurl, gcc, unzip, curl }:
 
 stdenv.mkDerivation {
-  name = "dmd-2.064.2";
+  name = "dmd-2.066.1";
 
   src = fetchurl {
-    url = http://downloads.dlang.org/releases/2013/dmd.2.064.2.zip;
-    sha256 = "1i0jdybigffwyb7c43j0c4aayxx3b93zzqrjxyw6zgp06yhi06pm";
+    url = http://downloads.dlang.org/releases/2014/dmd.2.066.1.zip;
+    sha256 = "c6b0bf73e9c7d24dd6c827ec9fe4f1da8156569da3b36df517434043f3e32ee2";
   };
 
   buildInputs = [ gcc unzip curl ];
